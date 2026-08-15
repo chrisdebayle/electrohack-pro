@@ -25,7 +25,6 @@
     body { margin: 0; background: var(--db-paper); }
     a { color: var(--db-primary); }
     a:hover { color: var(--db-accent-700); }
-    @media print { .no-print { display: none !important; } }
     @media (max-width: 640px) {
       .eh-qs-row { flex-direction: column !important; }
       .eh-qs-step { border-right: none !important; border-bottom: 1px solid var(--db-line); }
@@ -44,7 +43,6 @@
 
   <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0 0;">
     <img src="assets/logo-chrisdebayle.jpg" alt="Chris Debayle logo" style="width:36px; height:36px; border-radius:50%; object-fit:cover;"/>
-    <button class="no-print" onClick="{{ printPage }}" style="background:var(--db-primary); color:#fff; border:none; border-radius:var(--db-radius); padding:10px 18px; font-family:var(--db-font-display); font-weight:600; font-size:13px; letter-spacing:0.02em; cursor:pointer;">Print / Save as PDF</button>
   </div>
 
   <x-import component-from-global-scope="ChrisDebayleBrandComponents.Hero" hint-size="100%,300px"
@@ -516,8 +514,7 @@ class Component extends DCLogic {
       tierPills,
       tierChartRows,
       electrolyteDv: ELECTROLYTE_DV,
-      selectedTier: { ...TIERS[activeTier], sodium: fmt(TIERS[activeTier].sodiumMg), potassium: fmt(TIERS[activeTier].potassiumMg), magnesium: fmt(TIERS[activeTier].magnesiumMg) },
-      printPage: () => window.print()
+      selectedTier: { ...TIERS[activeTier], sodium: fmt(TIERS[activeTier].sodiumMg), potassium: fmt(TIERS[activeTier].potassiumMg), magnesium: fmt(TIERS[activeTier].magnesiumMg) }
     };
   }
 }
