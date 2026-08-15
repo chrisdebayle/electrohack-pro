@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ElectroHack Pro — DIY Electrolyte Formula</title>
+<meta name="description" content="A DIY performance electrolyte formula guide: ingredients, dosing tiers, sourcing, and mixing instructions.">
+<meta property="og:title" content="ElectroHack Pro — DIY Electrolyte Formula">
+<meta property="og:description" content="A DIY performance electrolyte formula guide: ingredients, dosing tiers, sourcing, and mixing instructions.">
+<meta property="og:type" content="website">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#1b3a63">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <text x="100" y="118" font-family="sans-serif" font-weight="700" font-size="60" fill="#fff" text-anchor="middle">EH</text>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/chris-debayle-brand-components-ba138143-d322-4d92-9e76-1c25e1a30713/_ds_bundle.css">
+  <link rel="stylesheet" href="_ds/chris-debayle-brand-components-ba138143-d322-4d92-9e76-1c25e1a30713/styles.css">
+  <script src="_ds/chris-debayle-brand-components-ba138143-d322-4d92-9e76-1c25e1a30713/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; background: var(--db-paper); }
+    a { color: var(--db-primary); }
+    a:hover { color: var(--db-accent-700); }
+    @media print { .no-print { display: none !important; } }
+    @media (max-width: 640px) {
+      .eh-qs-row { flex-direction: column !important; }
+      .eh-qs-step { border-right: none !important; border-bottom: 1px solid var(--db-line); }
+      .eh-qs-step:last-child { border-bottom: none; }
+      .eh-nutrition-grid { grid-template-columns: 1fr !important; }
+      .eh-stat-value { font-size: 30px !important; }
+      .eh-stat-strip { gap: 22px !important; }
+      .eh-chart-row { gap: 12px !important; }
+      .eh-chart-bar { width: 10px !important; }
+      .eh-tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .eh-tablewrap > div { min-width: 480px; }
+    }
+  </style>
+</helmet>
+<x-import component-from-global-scope="ChrisDebayleBrandComponents.SpineFrame" hint-size="100%,auto" style="display:block; max-width:980px; margin:0 auto; padding-bottom:40px;">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 0 0;">
+    <img src="assets/logo-chrisdebayle.jpg" alt="Chris Debayle logo" style="width:36px; height:36px; border-radius:50%; object-fit:cover;"/>
+    <button class="no-print" onClick="{{ printPage }}" style="background:var(--db-primary); color:#fff; border:none; border-radius:var(--db-radius); padding:10px 18px; font-family:var(--db-font-display); font-weight:600; font-size:13px; letter-spacing:0.02em; cursor:pointer;">Print / Save as PDF</button>
+  </div>
+
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Hero" hint-size="100%,300px"
+    eyebrow="Formulation Guide"
+    title="ElectroHack"
+    titleAccent="Pro"
+    tagline="DIY Performance Electrolyte Formula · Superior to Market Products · Clean Label · No Additives"
+    deck="ElectroHack Pro is a DIY electrolyte powder that out-performs most commercial electrolyte products by using superior ingredient forms, a more complete electrolyte profile, and doses calibrated to real physiological needs. Four pharmaceutical-grade mineral salts. No fillers, no sweeteners, no proprietary blends."
+    meta="{{ heroMeta }}"
+    version="Finalized · August 2026">
+  </x-import>
+
+  <div class="eh-qs-row" style="display:flex; gap:0; border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; margin:24px 0;">
+    <sc-for list="{{ quickStartSteps }}" as="step" hint-placeholder-count="4">
+      <div class="eh-qs-step" style="flex:1; padding:16px 18px; border-right:1px solid var(--db-line); background:{{ step.bg }};">
+        <div style="font-family:var(--db-font-display); font-weight:700; font-size:11px; color:var(--db-primary); letter-spacing:0.06em; margin-bottom:6px;">STEP {{ step.n }}</div>
+        <div style="font-family:var(--db-font-display); font-weight:600; font-size:15px; color:var(--db-dark); margin-bottom:4px;">{{ step.title }}</div>
+        <div style="font-size:12px; color:var(--db-muted); line-height:1.4;">{{ step.detail }}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="5" y1="19" x2="5" y2="13"></line><line x1="12" y1="19" x2="12" y2="8"></line><line x1="19" y1="19" x2="19" y2="4"></line></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="comparison" number="01" label="COMPARISON" title="Why it beats commercial electrolytes" subtitle="Same job as most commercial electrolyte mixes — sodium, potassium, magnesium, chloride — with forms and doses chosen against real physiological need instead of shelf life and taste.">
+
+    <div class="eh-stat-strip" style="display:flex; gap:36px; flex-wrap:wrap; margin:4px 0 28px;">
+      <div><div class="eh-stat-value" style="font-family:var(--db-font-display); font-weight:700; font-size:40px; color:var(--db-accent-700); line-height:1;">15×</div><div style="font-size:13px; color:var(--db-muted); margin-top:6px;">cheaper per serving</div></div>
+      <div><div class="eh-stat-value" style="font-family:var(--db-font-display); font-weight:700; font-size:40px; color:var(--db-accent-700); line-height:1;">2×</div><div style="font-size:13px; color:var(--db-muted); margin-top:6px;">more potassium than typical mixes</div></div>
+      <div><div class="eh-stat-value" style="font-family:var(--db-font-display); font-weight:700; font-size:40px; color:var(--db-accent-700); line-height:1;">2×</div><div style="font-size:13px; color:var(--db-muted); margin-top:6px;">more magnesium than typical mixes</div></div>
+      <div><div class="eh-stat-value" style="font-family:var(--db-font-display); font-weight:700; font-size:40px; color:var(--db-accent-700); line-height:1;">4</div><div style="font-size:13px; color:var(--db-muted); margin-top:6px;">clean mineral salts, no fillers</div></div>
+    </div>
+
+    <div class="eh-tablewrap">
+    <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; margin-top:8px; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+      <div style="display:table-header-group;">
+        <div style="display:table-row;">
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Feature</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Typical Market Product</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">ElectroHack Pro</div>
+        </div>
+      </div>
+      <div style="display:table-row-group;">
+        <sc-for list="{{ comparisonRows }}" as="row" hint-placeholder-count="8">
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; vertical-align:top;">{{ row.feature }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-muted); vertical-align:top;">{{ row.market }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; background:var(--db-tint-blue); vertical-align:top;">{{ row.eh }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <x-import component-from-global-scope="ChrisDebayleBrandComponents.Callout" hint-size="100%,auto" ground="light" source="ElectroHack Pro formulation notes">
+        No fillers, no sweeteners, no proprietary blends — four pharmaceutical-grade mineral salts, dosed higher than most market electrolyte products to match real physiological needs.
+      </x-import>
+    </div>
+  </x-import>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v5l-4 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-4-9V3"></path><line x1="6" y1="3" x2="18" y2="3"></line><line x1="8.5" y1="12" x2="15.5" y2="12"></line></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="make" number="02" label="MAKE IT" title="Equipment and mixing instructions" subtitle="No special skills required — this takes about 10 minutes with a kitchen scale.">
+
+    <div style="font-family:var(--db-font-display); font-weight:600; font-size:14px; color:var(--db-dark); margin-bottom:10px;">What you need</div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:28px;">
+      <sc-for list="{{ equipmentItems }}" as="item" hint-placeholder-count="4">
+        <div style="display:flex; gap:10px; align-items:flex-start; padding:12px 14px; border:1px solid var(--db-line); border-radius:var(--db-radius);">
+          <div style="width:6px; height:6px; border-radius:50%; background:var(--db-primary); margin-top:6px; flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:13px; font-weight:600; color:var(--db-dark);">{{ item.name }}</div>
+            <div style="font-size:12px; color:var(--db-muted); margin-top:2px;">{{ item.note }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="font-family:var(--db-font-display); font-weight:600; font-size:14px; color:var(--db-dark); margin-bottom:10px;">Steps</div>
+    <div style="display:flex; flex-direction:column; gap:0;">
+      <sc-for list="{{ mixSteps }}" as="step" hint-placeholder-count="5">
+        <div style="display:flex; gap:16px; padding:14px 0; border-bottom:1px solid var(--db-line);">
+          <div style="width:28px; height:28px; border-radius:50%; background:var(--db-tint-blue); color:var(--db-primary); font-family:var(--db-font-display); font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">{{ step.n }}</div>
+          <div>
+            <div style="font-size:14px; font-weight:600; color:var(--db-dark); margin-bottom:2px;">{{ step.title }}</div>
+            <div style="font-size:13px; color:var(--db-ink-soft); line-height:1.5;">{{ step.detail }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </x-import>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="17" r="2.4"></circle><circle cx="18" cy="17" r="2.4"></circle><circle cx="12" cy="6" r="2.4"></circle><line x1="8" y1="15.5" x2="10.5" y2="8"></line><line x1="16" y1="15.5" x2="13.5" y2="8"></line></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="ingredients" number="03" label="FORMULA" title="Ingredients and why each form was chosen" subtitle="Amounts shown are per serving (Tier 4, the reference dose on the nutrition label).">
+    <div class="eh-tablewrap">
+    <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+      <div style="display:table-header-group;">
+        <div style="display:table-row;">
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Ingredient</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Electrolyte</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Per Serving</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Why This Form</div>
+        </div>
+      </div>
+      <div style="display:table-row-group;">
+        <sc-for list="{{ ingredientRows }}" as="row" hint-placeholder-count="4">
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; vertical-align:top;">{{ row.name }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.electrolyte }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top; white-space:nowrap;">{{ row.perServing }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.why }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </div>
+  </x-import>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="7.5" y1="9" x2="16.5" y2="9"></line><line x1="7.5" y1="13" x2="16.5" y2="13"></line><line x1="7.5" y1="17" x2="13" y2="17"></line></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="nutrition" number="04" label="NUTRITION &amp; SOURCING" title="Nutrition facts and where to buy" subtitle="Adjust the batch size below to scale the recipe and see how many containers of each ingredient to buy.">
+
+    <div class="eh-nutrition-grid" style="display:grid; grid-template-columns:280px 1fr; gap:32px; align-items:start;">
+
+      <div style="border:2px solid var(--db-dark); padding:12px 16px;">
+        <div style="font-family:var(--db-font-display); font-weight:700; font-size:22px; color:var(--db-dark); border-bottom:8px solid var(--db-dark); padding-bottom:6px;">Nutrition Facts</div>
+        <div style="font-size:13px; color:var(--db-ink-soft); padding-top:6px; border-bottom:1px solid var(--db-dark); padding-bottom:6px;">90 servings per container<br/>Serving size 1 serving (4.65g)</div>
+        <div style="display:flex; justify-content:space-between; font-family:var(--db-font-display); font-weight:700; font-size:15px; color:var(--db-dark); padding:6px 0; border-bottom:4px solid var(--db-dark);">
+          <span>Calories</span><span>0</span>
+        </div>
+        <div style="text-align:right; font-size:11px; color:var(--db-muted); padding-top:4px; border-bottom:1px solid var(--db-line);">% Daily Value*</div>
+        <sc-for list="{{ nutritionRows }}" as="row" hint-placeholder-count="7">
+          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--db-ink-soft); padding:6px 0; border-bottom:1px solid var(--db-line);">
+            <span>{{ row.label }} {{ row.amount }}</span><span style="font-weight:600; color:var(--db-dark);">{{ row.dv }}</span>
+          </div>
+        </sc-for>
+        <div style="font-size:10px; color:var(--db-muted); padding-top:8px; line-height:1.4;">* The % Daily Value tells you how much a nutrient in a serving contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</div>
+      </div>
+
+      <div>
+        <div style="font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); margin-bottom:10px;">% Daily value at a glance</div>
+        <div style="display:flex; gap:20px; flex-wrap:wrap; margin-bottom:24px;">
+          <sc-for list="{{ electrolyteDv }}" as="e" hint-placeholder-count="4">
+            <div style="flex:1; min-width:110px;">
+              <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--db-muted); margin-bottom:4px;"><span>{{ e.label }}</span><span style="color:var(--db-dark); font-weight:600;">{{ e.pct }}%</span></div>
+              <div style="height:6px; background:var(--db-line); border-radius:3px; overflow:hidden;"><div style="height:100%; width:{{ e.pct }}%; background:{{ e.color }};"></div></div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px;">
+          <label style="font-family:var(--db-font-display); font-size:12px; letter-spacing:0.04em; text-transform:uppercase; color:var(--db-muted);">Batch size (servings)</label>
+          <input type="number" min="1" max="9999" value="{{ batchServings }}" onChange="{{ onBatchChange }}" style="width:90px; padding:8px 10px; border:1px solid var(--db-line); border-radius:var(--db-radius); font-family:var(--db-font-body); font-size:14px; color:var(--db-dark);"/>
+          <span style="font-size:13px; color:var(--db-muted);">Total batch weight: <strong style="color:var(--db-dark);">{{ totalBatchWeight }}</strong></span>
+        </div>
+
+        <div style="display:flex; gap:24px; flex-wrap:wrap; padding:14px 16px; background:var(--db-tint-blue); border-radius:var(--db-radius); margin-bottom:16px;">
+          <div><div style="font-family:var(--db-font-display); font-weight:700; font-size:20px; color:var(--db-dark);">{{ estimatedStartupCost }}</div><div style="font-size:12px; color:var(--db-muted);">estimated first-time cost, one-time</div></div>
+          <div><div style="font-family:var(--db-font-display); font-weight:700; font-size:20px; color:var(--db-dark);">{{ estimatedCostPerServing }}</div><div style="font-size:12px; color:var(--db-muted);">per serving, at this batch size</div></div>
+        </div>
+
+        <div class="eh-tablewrap">
+        <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+          <div style="display:table-header-group;">
+            <div style="display:table-row;">
+              <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Ingredient</div>
+              <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Grams Needed</div>
+              <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Buy</div>
+            </div>
+          </div>
+          <div style="display:table-row-group;">
+            <sc-for list="{{ sourceRows }}" as="row" hint-placeholder-count="4">
+              <div style="display:table-row;">
+                <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; vertical-align:top;">{{ row.name }}</div>
+                <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.gramsLabel }}</div>
+                <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); vertical-align:top;">
+                  <a href="{{ row.href }}" target="_blank" rel="noopener">{{ row.containersLabel }} × {{ row.size }} — {{ row.buyLabel }}</a>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        </div>
+
+        <div style="font-size:12px; color:var(--db-muted); margin-top:8px; line-height:1.5;">
+          Container counts round up to whole units — order minimums vary by seller. Prices are approximate and vary by retailer; bags last multiple batches, so refill cost is much lower than the first-time total shown above.
+        </div>
+
+        <div style="margin-top:16px; padding:12px 14px; border:1px solid var(--db-line); border-radius:var(--db-radius); font-size:13px; color:var(--db-ink-soft);">
+          <strong style="color:var(--db-dark);">1g measuring scoop</strong> — search <a href="https://www.amazon.com/s?k=NIIIYTYB+measuring+spoons" target="_blank" rel="noopener">"NIIIYTYB measuring spoons"</a> on Amazon (10-piece set includes the 1g scoop used for all tiers).
+        </div>
+      </div>
+    </div>
+  </x-import>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 16a8 8 0 0 1 16 0"></path><line x1="12" y1="16" x2="15.5" y2="10.5"></line><circle cx="12" cy="16" r="1.2" fill="currentColor" stroke="none"></circle></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="dosing" number="05" label="DOSING" title="How to use — dosing by lifestyle" subtitle="All five tiers use the same pre-mixed powder — just adjust scoop count. Mix with 20–32 oz of water; more water gives a milder flavor.">
+
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+      <sc-for list="{{ tierPills }}" as="pill" hint-placeholder-count="5">
+        <button onClick="{{ pill.select }}" style="padding:10px 16px; border-radius:999px; font-family:var(--db-font-display); font-weight:600; font-size:13px; cursor:pointer; background:{{ pill.bg }}; color:{{ pill.color }}; border:1px solid {{ pill.borderColor }};">{{ pill.label }}</button>
+      </sc-for>
+    </div>
+
+    <div style="padding:16px 20px; background:var(--db-tint-blue); border-radius:var(--db-radius); margin-bottom:20px;">
+      <div style="font-family:var(--db-font-display); font-size:13px; color:var(--db-muted); text-transform:uppercase; letter-spacing:0.04em; margin-bottom:8px;">{{ selectedTier.who }}</div>
+      <div style="display:flex; gap:32px; flex-wrap:wrap;">
+        <div><div style="font-size:22px; font-weight:700; font-family:var(--db-font-display); color:var(--db-dark);">{{ selectedTier.scoops }}</div><div style="font-size:12px; color:var(--db-muted);">scoops</div></div>
+        <div><div style="font-size:22px; font-weight:700; font-family:var(--db-font-display); color:var(--db-dark);">{{ selectedTier.sodium }}</div><div style="font-size:12px; color:var(--db-muted);">sodium</div></div>
+        <div><div style="font-size:22px; font-weight:700; font-family:var(--db-font-display); color:var(--db-dark);">{{ selectedTier.potassium }}</div><div style="font-size:12px; color:var(--db-muted);">potassium</div></div>
+        <div><div style="font-size:22px; font-weight:700; font-family:var(--db-font-display); color:var(--db-dark);">{{ selectedTier.magnesium }}</div><div style="font-size:12px; color:var(--db-muted);">magnesium</div></div>
+        <div><div style="font-size:22px; font-weight:700; font-family:var(--db-font-display); color:var(--db-dark);">{{ selectedTier.total }}</div><div style="font-size:12px; color:var(--db-muted);">total powder</div></div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:24px;">
+      <div class="eh-chart-row" style="display:flex; align-items:flex-end; gap:28px; height:150px; padding:12px 4px 0; border-bottom:1px solid var(--db-line);">
+        <sc-for list="{{ tierChartRows }}" as="row" hint-placeholder-count="5">
+          <div style="display:flex; flex-direction:column; align-items:center; gap:8px; flex:1;">
+            <div style="display:flex; align-items:flex-end; gap:4px; height:120px;">
+              <div class="eh-chart-bar" style="width:14px; height:{{ row.sodiumH }}px; background:var(--db-primary); border-radius:2px 2px 0 0;"></div>
+              <div class="eh-chart-bar" style="width:14px; height:{{ row.potassiumH }}px; background:var(--db-accent-700); border-radius:2px 2px 0 0;"></div>
+              <div class="eh-chart-bar" style="width:14px; height:{{ row.magnesiumH }}px; background:var(--db-accent-800); border-radius:2px 2px 0 0;"></div>
+            </div>
+            <div style="font-size:12px; font-weight:{{ row.labelWeight }}; color:{{ row.labelColor }};">Tier {{ row.tier }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex; gap:20px; margin-top:10px; font-size:12px; color:var(--db-muted);">
+        <span><span style="display:inline-block; width:10px; height:10px; background:var(--db-primary); border-radius:2px; margin-right:6px; vertical-align:-1px;"></span>Sodium</span>
+        <span><span style="display:inline-block; width:10px; height:10px; background:var(--db-accent-700); border-radius:2px; margin-right:6px; vertical-align:-1px;"></span>Potassium</span>
+        <span><span style="display:inline-block; width:10px; height:10px; background:var(--db-accent-800); border-radius:2px; margin-right:6px; vertical-align:-1px;"></span>Magnesium</span>
+      </div>
+    </div>
+
+    <div class="eh-tablewrap">
+    <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+      <div style="display:table-header-group;">
+        <div style="display:table-row;">
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Tier</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Who</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Scoops</div>
+        </div>
+      </div>
+      <div style="display:table-row-group;">
+        <sc-for list="{{ tierRows }}" as="row" hint-placeholder-count="5">
+          <div onClick="{{ row.select }}" style="display:table-row; cursor:pointer; background:{{ row.rowBg }};">
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; vertical-align:top;">{{ row.tier }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.who }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.scoops }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </div>
+    <div style="font-size:12px; color:var(--db-muted); margin-top:8px;">Click a row or pill above to see that tier's full sodium / potassium / magnesium breakdown.</div>
+
+    <div style="margin-top:24px;">
+      <div style="font-family:var(--db-font-display); font-weight:600; font-size:14px; color:var(--db-dark); margin-bottom:10px;">Dose modifiers</div>
+      <div class="eh-tablewrap">
+      <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+        <div style="display:table-row-group;">
+          <sc-for list="{{ modifierRows }}" as="row" hint-placeholder-count="4">
+            <div style="display:table-row;">
+              <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; width:38%; vertical-align:top;">{{ row.modifier }}</div>
+              <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.adjustment }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      </div>
+    </div>
+  </x-import>
+  </div>
+
+  <div style="position:relative;">
+  <div style="position:absolute; top:50px; right:0; color:var(--db-primary);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l7 3v5c0 5-3 8.2-7 9.9-4-1.7-7-4.9-7-9.9v-5l7-3z"></path></svg></div>
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Section" hint-size="100%,auto" id="safety" number="06" label="SAFETY" title="Safety and cautions">
+    <div class="eh-tablewrap">
+    <div style="border:1px solid var(--db-line); border-radius:var(--db-radius); overflow:hidden; display:table; width:100%; border-collapse:collapse; font-family:var(--db-font-body); font-size:14px;">
+      <div style="display:table-header-group;">
+        <div style="display:table-row;">
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Condition / Medication</div>
+          <div style="display:table-cell; text-align:left; padding:10px 14px; background:var(--db-light); font-family:var(--db-font-display); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--db-muted); border-bottom:1px solid var(--db-line);">Consideration</div>
+        </div>
+      </div>
+      <div style="display:table-row-group;">
+        <sc-for list="{{ safetyRows }}" as="row" hint-placeholder-count="5">
+          <div style="display:table-row;">
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-dark); font-weight:600; width:34%; vertical-align:top;">{{ row.condition }}</div>
+            <div style="display:table-cell; padding:10px 14px; border-bottom:1px solid var(--db-line); color:var(--db-ink-soft); vertical-align:top;">{{ row.note }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    </div>
+  </x-import>
+  </div>
+
+  <x-import component-from-global-scope="ChrisDebayleBrandComponents.Footer" hint-size="100%,auto" signature="ElectroHack Pro · a DIY formulation for personal use · verify against your own labs and physician guidance.">
+    <div style="font-family:var(--db-font-display); font-weight:700; font-size:16px; color:var(--db-dark); margin-bottom:12px;">Medical Disclaimer</div>
+    <div style="font-size:13px; color:var(--db-ink-soft); line-height:1.6; max-width:640px;">
+      <p>This document is for educational and informational purposes only. ElectroHack Pro is a personally formulated DIY supplement and is not a commercial product. It is not intended to diagnose, treat, cure, or prevent any disease. Individuals with pre-existing health conditions or those taking prescription medications should consult a qualified physician before use. Electrolyte needs vary significantly by individual — doses provided are general guidelines only. Use at your own discretion.</p>
+      <p>The author is not a licensed health practitioner, physician, dietitian, or personal trainer. This page reflects personal research and self-experimentation and should not be treated as professional medical or nutritional advice.</p>
+    </div>
+  </x-import>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const COMPARISON_ROWS = [
+  { feature: 'Sodium form', market: 'Sodium chloride', eh: 'Sodium citrate + NaCl — adds acid buffer' },
+  { feature: 'Potassium form', market: 'Potassium chloride', eh: 'Potassium bicarbonate — less bitter, alkalizing' },
+  { feature: 'Magnesium form', market: 'Magnesium malate', eh: 'Magnesium glycinate — superior absorption, no GI issues' },
+  { feature: 'Chloride coverage', market: 'Incidental', eh: 'Explicit 400mg — supports gastric acid + nerve signaling' },
+  { feature: 'Potassium dose', market: '200mg', eh: '300mg — matches real sweat loss' },
+  { feature: 'Magnesium dose', market: '60mg (token)', eh: '120mg — covers ~29% RDA' },
+  { feature: 'Tiered dosing', market: 'One size', eh: '5 tiers by lifestyle and activity level' },
+  { feature: 'Cost per serving', market: '~$1.50', eh: '~$0.10 — 15x cheaper' }
+];
+
+const INGREDIENT_ROWS = [
+  { name: 'Sodium Citrate', electrolyte: 'Sodium', perServing: '1,000mg Na', why: 'Buffers lactic acid post-exercise; gentler on GI than NaCl alone' },
+  { name: 'Sodium Chloride (Sea Salt)', electrolyte: 'Sodium + Chloride', perServing: '400mg Na / 400mg Cl', why: 'Restores chloride — the most overlooked electrolyte in commercial products' },
+  { name: 'Potassium Bicarbonate', electrolyte: 'Potassium', perServing: '300mg K', why: 'Alkalizing, less bitter than KCl, better GI tolerance for daily use' },
+  { name: 'Magnesium Glycinate', electrolyte: 'Magnesium', perServing: '120mg Mg', why: 'Highest bioavailability, zero laxative effect at this dose; glycine supports collagen and calm' }
+];
+
+const NUTRITION_ROWS = [
+  { label: 'Total Fat', amount: '0g', dv: '0%' },
+  { label: 'Total Carbohydrate', amount: '0g', dv: '0%' },
+  { label: 'Protein', amount: '0g', dv: '0%' },
+  { label: 'Sodium', amount: '1,400mg', dv: '61%' },
+  { label: 'Chloride', amount: '400mg', dv: '17%' },
+  { label: 'Potassium', amount: '300mg', dv: '6%' },
+  { label: 'Magnesium', amount: '120mg', dv: '29%' }
+];
+
+const TIERS = [
+  { tier: 1, who: 'Sedentary — desk job, minimal sweat', scoops: '2', sodiumMg: 600, potassiumMg: 129, magnesiumMg: 52, total: '~2.3g' },
+  { tier: 2, who: 'Lightly active — walking, yoga, casual movement', scoops: '3–4', sodiumMg: 900, potassiumMg: 194, magnesiumMg: 78, total: '~3.5g' },
+  { tier: 3, who: 'Moderately active — 3–4x/week gym, recreational sport', scoops: '4', sodiumMg: 1204, potassiumMg: 258, magnesiumMg: 103, total: '~4.1g' },
+  { tier: 4, who: 'Highly active — daily training, heavy lifting', scoops: '5', sodiumMg: 1400, potassiumMg: 300, magnesiumMg: 120, total: '~4.65g' },
+  { tier: 5, who: 'Athlete / heat — 2-a-days, prolonged cardio, hot climate', scoops: '6', sodiumMg: 1806, potassiumMg: 387, magnesiumMg: 155, total: '~6.0g' }
+];
+const CHART_MAX = { sodium: 1806, potassium: 387, magnesium: 155 };
+const ELECTROLYTE_DV = [
+  { label: 'Sodium', pct: 61, color: 'var(--db-primary)' },
+  { label: 'Chloride', pct: 17, color: 'var(--db-accent-700)' },
+  { label: 'Potassium', pct: 6, color: 'var(--db-accent-800)' },
+  { label: 'Magnesium', pct: 29, color: 'var(--db-muted)' }
+];
+
+const MODIFIER_ROWS = [
+  { modifier: 'Low-carb / keto diet', adjustment: 'Add 1 scoop — higher renal sodium/potassium excretion' },
+  { modifier: 'High heat or outdoor training', adjustment: 'Add 1 scoop on days with heavy sweat output' },
+  { modifier: 'Extended fasting (16:8, 24hr)', adjustment: 'Add 1 scoop — fasting increases renal electrolyte loss' },
+  { modifier: 'Age 60+', adjustment: 'Start at Tier 2 minimum regardless of activity level' }
+];
+
+const SAFETY_ROWS = [
+  { condition: 'Hypertension (sodium-sensitive)', note: 'High sodium load may be inappropriate — consult physician before use' },
+  { condition: 'Chronic kidney disease', note: 'Impaired potassium clearance — potassium supplementation requires medical oversight' },
+  { condition: 'Hyperkalemia (elevated serum K+)', note: 'Do not use this formula — potassium load is contraindicated' },
+  { condition: 'ACE inhibitors / ARBs / K-sparing diuretics', note: 'These drugs elevate serum potassium — additive risk with supplemental potassium' },
+  { condition: 'GI sensitivity', note: 'Potassium bicarbonate may cause mild CO2-related bloating — reduce dose or split serving' }
+];
+
+const INGREDIENT_SOURCES = [
+  { name: 'Sodium Citrate', size: '500g bag', containerG: 500, recipeG90: 216, buyLabel: 'BulkSupplements', href: 'https://www.bulksupplements.com/search?type=product&q=sodium+citrate', approxPrice: 12 },
+  { name: 'Sodium Chloride (Sea Salt)', size: '5 lb jar', containerG: 2268, recipeG90: 90, buyLabel: 'Amazon — Ankerio Fine Sea Salt', href: 'https://www.amazon.com/s?k=Ankerio+Fine+Sea+Salt+5+lb', approxPrice: 10 },
+  { name: 'Potassium Bicarbonate', size: '100g bag', containerG: 100, recipeG90: 49.5, buyLabel: 'BulkSupplements', href: 'https://www.bulksupplements.com/search?type=product&q=potassium+bicarbonate', approxPrice: 9 },
+  { name: 'Magnesium Glycinate', size: '250g bag', containerG: 250, recipeG90: 63, buyLabel: 'BulkSupplements', href: 'https://www.bulksupplements.com/search?type=product&q=magnesium+glycinate', approxPrice: 15 }
+];
+const SCOOP_PRICE = 8;
+
+const QUICK_START_STEPS = [
+  { n: 1, title: 'Buy', detail: '4 mineral salts + a 1g scoop, all linked below' },
+  { n: 2, title: 'Weigh', detail: 'Measure each ingredient on a gram scale' },
+  { n: 3, title: 'Mix', detail: 'Combine and shake or whisk until even' },
+  { n: 4, title: 'Dose', detail: 'Scoop into water based on your tier' }
+];
+
+const EQUIPMENT_ITEMS = [
+  { name: 'Digital gram scale', note: 'Accurate to 0.1g — needed to hit the ratios correctly' },
+  { name: '1g measuring scoop', note: 'For daily dosing once the batch is mixed' },
+  { name: 'Large mixing bowl or jar', note: 'Big enough to hold the full batch with room to shake' },
+  { name: 'Airtight storage container', note: 'Keeps the powder dry between uses' }
+];
+
+const MIX_STEPS = [
+  { n: 1, title: 'Weigh each ingredient separately', detail: 'Use the gram amounts from the sourcing table below, scaled to your batch size.' },
+  { n: 2, title: 'Combine in a bowl or jar', detail: 'Add all four powders together in one container.' },
+  { n: 3, title: 'Mix thoroughly', detail: 'Shake or whisk for at least a minute — uneven mixing means uneven doses.' },
+  { n: 4, title: 'Transfer to storage', detail: 'Move to an airtight container, away from heat and moisture.' },
+  { n: 5, title: 'Label and date it', detail: 'Note the batch size and mix date so you can track freshness.' }
+];
+
+class Component extends DCLogic {
+  state = { batchServings: 90, activeTier: 3 };
+
+  renderVals() {
+    const servings = Math.max(1, Math.min(this.state.batchServings || 1, 9999));
+    const scale = servings / 90;
+
+    const sourceRows = INGREDIENT_SOURCES.map(i => {
+      const grams = i.recipeG90 * scale;
+      const containers = Math.max(1, Math.ceil(grams / i.containerG));
+      return { ...i, gramsLabel: grams.toFixed(1) + 'g', containersLabel: containers, cost: containers * i.approxPrice };
+    });
+    const totalBatchWeight = sourceRows.reduce((s, r) => s + r.recipeG90 * scale, 0).toFixed(1) + 'g';
+    const startupCost = sourceRows.reduce((s, r) => s + r.cost, 0) + SCOOP_PRICE;
+    const estimatedStartupCost = '~$' + startupCost.toFixed(0);
+    const estimatedCostPerServing = '~$' + (startupCost / servings).toFixed(2);
+
+    const activeTier = this.state.activeTier;
+    const fmt = (n) => n.toLocaleString('en-US') + 'mg';
+    const tierRows = TIERS.map((t, i) => ({
+      ...t,
+      sodium: fmt(t.sodiumMg), potassium: fmt(t.potassiumMg), magnesium: fmt(t.magnesiumMg),
+      rowBg: i === activeTier ? 'var(--db-tint-blue)' : 'transparent',
+      select: () => this.setState({ activeTier: i })
+    }));
+    const tierPills = TIERS.map((t, i) => ({
+      label: 'Tier ' + t.tier,
+      bg: i === activeTier ? 'var(--db-primary)' : 'var(--db-paper)',
+      color: i === activeTier ? '#fff' : 'var(--db-dark)',
+      borderColor: i === activeTier ? 'var(--db-primary)' : 'var(--db-line)',
+      select: () => this.setState({ activeTier: i })
+    }));
+    const tierChartRows = TIERS.map((t, i) => ({
+      tier: t.tier,
+      sodiumH: Math.round((t.sodiumMg / CHART_MAX.sodium) * 120),
+      potassiumH: Math.round((t.potassiumMg / CHART_MAX.potassium) * 120),
+      magnesiumH: Math.round((t.magnesiumMg / CHART_MAX.magnesium) * 120),
+      labelWeight: i === activeTier ? 700 : 600,
+      labelColor: i === activeTier ? 'var(--db-primary)' : 'var(--db-dark)'
+    }));
+
+    return {
+      heroMeta: [
+        { label: 'Servings per batch', value: '90' },
+        { label: 'Cost per serving', value: '~$0.10' },
+        { label: 'Reference dose', value: 'Tier 4 — 4.65g' }
+      ],
+      comparisonRows: COMPARISON_ROWS,
+      ingredientRows: INGREDIENT_ROWS,
+      nutritionRows: NUTRITION_ROWS,
+      modifierRows: MODIFIER_ROWS,
+      safetyRows: SAFETY_ROWS,
+      sourceRows,
+      totalBatchWeight,
+      estimatedStartupCost,
+      estimatedCostPerServing,
+      quickStartSteps: QUICK_START_STEPS.map((s, i) => ({ ...s, bg: i % 2 === 0 ? 'var(--db-light)' : 'var(--db-paper)' })),
+      equipmentItems: EQUIPMENT_ITEMS,
+      mixSteps: MIX_STEPS,
+      batchServings: servings,
+      onBatchChange: (e) => {
+        const v = parseInt(e.target.value, 10);
+        this.setState({ batchServings: isNaN(v) ? 1 : v });
+      },
+      tierRows,
+      tierPills,
+      tierChartRows,
+      electrolyteDv: ELECTROLYTE_DV,
+      selectedTier: { ...TIERS[activeTier], sodium: fmt(TIERS[activeTier].sodiumMg), potassium: fmt(TIERS[activeTier].potassiumMg), magnesium: fmt(TIERS[activeTier].magnesiumMg) },
+      printPage: () => window.print()
+    };
+  }
+}
+</script>
+</body>
+</html>
